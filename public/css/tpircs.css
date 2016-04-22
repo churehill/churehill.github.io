@@ -1,0 +1,11 @@
+/* Theme base */
+.theme-tpircs .sidebar,
+.theme-tpircs .sidebar-toggle:active,
+.theme-tpircs #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #4183c4;
+}
+.theme-tpircs .container a,
+.theme-tpircs .sidebar-toggle,
+.theme-tpircs .related-posts li a:hover {
+  color: #4183c4;
+}
