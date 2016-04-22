@@ -53,8 +53,10 @@ Pycharm不仅可以使用本地python解释器，还可以通过ssh使用远程p
 
 创建一个sudo运行python的shell脚本，保存在服务器上（注意这个脚本的文件名必须是以python开头，不然pycharm不将其识别为Python解释器）
 
-<pre class="lang:sh decode:true " title="Python with sudo">#!/bin/bash
-sudo -E env PYTHONPATH=$PYTHONPATH python3 "$@"</pre>
+```bash
+#!/bin/bash
+sudo -E env PYTHONPATH=$PYTHONPATH python3 "$@"
+```
 
 最后，在Pycharm中配置远程Python解释器，_Python Interpreter Path_就填这个shell脚本的路径，这样Pycharm就会将其当成一个Python解释器，然后就能root运行项目了。
 

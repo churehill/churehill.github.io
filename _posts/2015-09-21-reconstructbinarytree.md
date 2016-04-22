@@ -15,7 +15,8 @@ categories:
 
 这个问题的解决方法有两种，一种是递归解决，比较直观，另一种是用stack来做，如下：
 
-<pre class="lang:c++ decode:true ">// Definition for a binary tree node.
+```cpp
+// Definition for a binary tree node.
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -90,7 +91,7 @@ public:
         return root;
     }
 };
-</pre>
+```
 
 &nbsp;
 
